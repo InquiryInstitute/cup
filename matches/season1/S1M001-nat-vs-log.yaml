@@ -1,0 +1,775 @@
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🏆 INQUIRY CUP — Season 1, Match 001
+# NAT vs LOG — "The Ground of Reason"
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+match:
+  id: S1M001
+  season: 1
+  title: "The Ground of Reason"
+
+  home:
+    code: NAT
+    name: "The Naturalists"
+    tender:
+      name: "Thales"
+      role: tender
+      voice: "en-US-GuyNeural"
+    field:
+      - name: "Hume"
+        role: midfielder
+        voice: "en-GB-RyanNeural"
+      - name: "Darwin"
+        role: forward
+        voice: "en-AU-WilliamNeural"
+      - name: "Dewey"
+        role: midfielder
+        voice: "en-US-DavisNeural"
+      - name: "Quine"
+        role: defender
+        voice: "en-US-JasonNeural"
+
+  away:
+    code: LOG
+    name: "The Logicians"
+    tender:
+      name: "Aristotle"
+      role: tender
+      voice: "en-US-TonyNeural"
+    field:
+      - name: "Frege"
+        role: midfielder
+        voice: "en-GB-ThomasNeural"
+      - name: "Russell"
+        role: forward
+        voice: "en-GB-OliverNeural"
+      - name: "Gödel"
+        role: midfielder
+        voice: "en-US-BrandonNeural"
+      - name: "Tarski"
+        role: defender
+        voice: "en-US-EricNeural"
+
+  officials:
+    referee:
+      name: "Wittgenstein"
+      voice: "en-GB-AlfieNeural"
+    pbp:
+      name: "Arendt"
+      voice: "en-US-JennyNeural"
+    color:
+      name: "Rorty"
+      voice: "en-US-AriaNeural"
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# FIRST HALF
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+events:
+  # ── Pre-match ───────────────────────────────────────────────────
+
+  - minute: 0
+    type: announce
+    actor: Arendt
+    text: "Good evening. Welcome to the Inquiry Cup. Season one. Match one. I'm Arendt, alongside Rorty. The Naturalists take on The Logicians tonight, and the question on the pitch — if you'll permit — is the oldest one we have."
+
+  - minute: 0
+    type: comment
+    actor: Rorty
+    text: "What can be known, and how. That's the fixture. Two squads, ten thinkers, one ball. And the ball — let me remind everyone — goes to whoever earns the right to speak next."
+
+  - minute: 0
+    type: announce
+    actor: Arendt
+    text: "Thales in goal for the Naturalists. Aristotle minding the net for the Logicians. Both Tenders are set."
+
+  # ── Kickoff ────────────────────────────────────────────────────
+
+  - minute: 0
+    type: whistle
+    actor: Wittgenstein
+    reason: kickoff
+    direction: "Wittgenstein raises a hand. A single sharp blast."
+
+  - minute: 0
+    type: announce
+    actor: Arendt
+    text: "We are underway. Thales with the ball at the center mark."
+
+  - minute: 0
+    type: hold
+    actor: Thales
+    direction: "Thales stands still. Holds the ball. Does not move."
+
+  - minute: 1
+    type: pause
+    pause_ms: 3000
+    direction: "Three seconds of silence. The pitch is vast and still."
+
+  - minute: 1
+    type: comment
+    actor: Rorty
+    text: "He's not moving. You'd think a goalkeeper would just punt it, but Thales isn't a goalkeeper. He's a first principle."
+
+  # ── Opening exchange ───────────────────────────────────────────
+
+  - minute: 1
+    type: pass
+    from: Thales
+    to: Hume
+
+  - minute: 1
+    type: announce
+    actor: Arendt
+    text: "Thales plays it short to Hume."
+
+  - minute: 2
+    type: speak
+    actor: Hume
+    text: "We begin where we must — with observation. I hold this ball. I feel its weight. I see its shape. And from this, and only this, I will reason. Not from what I wish were true. Not from what must be true. From what is."
+    tone: measured
+    direction: "Hume stands in midfield. Does not advance. Plants himself."
+
+  - minute: 3
+    type: comment
+    actor: Rorty
+    text: "Textbook Hume. He's not going anywhere until he's established the ground. The Logicians will have to come to him."
+
+  - minute: 3
+    type: move
+    actor: Russell
+    position: { x: -5, y: 3 }
+    direction: "Russell takes one step forward from the Logicians' midfield."
+
+  - minute: 4
+    type: announce
+    actor: Arendt
+    text: "Russell steps up. He wants the ball."
+
+  - minute: 4
+    type: speak
+    actor: Russell
+    text: "Observation is insufficient. You hold the ball, Hume, but you cannot derive a rule from holding it. You feel weight — that is sensation. You see shape — that is perception. Neither gives you logic. Neither gives you entailment."
+    tone: sharp
+
+  - minute: 5
+    type: comment
+    actor: Rorty
+    text: "Russell going straight at him. No buildup, no passing triangles. Just a direct challenge at the point of contact."
+
+  - minute: 6
+    type: speak
+    actor: Hume
+    text: "Entailment. There it is — the word you need and I don't. You need the world to behave deductively. I only need it to behave. The sun has risen every day of my life. I expect it tomorrow. That expectation is not logic. It is habit. And habit is enough to play this game."
+    tone: measured
+
+  - minute: 7
+    type: pass
+    from: Hume
+    to: Darwin
+
+  - minute: 7
+    type: announce
+    actor: Arendt
+    text: "Hume releases it forward to Darwin. The Naturalists pushing up."
+
+  - minute: 8
+    type: speak
+    actor: Darwin
+    text: "Habit is more than enough. It is the mechanism. Every organism that persisted did so because it responded to regularity without requiring proof of regularity. The sparrow does not deduce the worm. It acts. That action — repeated, varied, selected — is the ground of all knowledge worth having."
+    tone: warm
+
+  - minute: 9
+    type: comment
+    actor: Rorty
+    text: "Darwin in space now. The Logicians' back line hasn't adjusted. Tarski is deep, Frege is flat-footed."
+
+  # ── Logicians respond ──────────────────────────────────────────
+
+  - minute: 10
+    type: speak
+    actor: Frege
+    text: "The sparrow acts. Granted. But the sparrow cannot tell you what a number is. It cannot distinguish a concept from an object. You are describing survival. I am describing truth. These are not the same pitch."
+    tone: cold
+
+  - minute: 10
+    type: intercept
+    actor: Frege
+    direction: "Frege steps in cleanly. Takes possession."
+
+  - minute: 10
+    type: announce
+    actor: Arendt
+    text: "Frege intercepts! Logicians have the ball."
+
+  - minute: 11
+    type: pass
+    from: Frege
+    to: Gödel
+
+  - minute: 11
+    type: announce
+    actor: Arendt
+    text: "Played across to Gödel in midfield."
+
+  - minute: 12
+    type: speak
+    actor: Gödel
+    text: "I want to be careful here. Frege says we are describing truth. I would say — we are describing the limits of description. Any system strong enough to contain arithmetic contains statements it cannot prove. That is not a defect. That is the architecture."
+    tone: quiet
+    direction: "Gödel remains still. Barely audible. The pitch goes silent."
+
+  - minute: 13
+    type: pause
+    pause_ms: 4000
+    direction: "Four seconds of silence. No one moves."
+
+  - minute: 13
+    type: comment
+    actor: Rorty
+    text: "And there it is. Gödel just froze the entire pitch. You could hear a pin drop. The Naturalists don't know where to press because the claim isn't spatial — it's structural."
+
+  - minute: 14
+    type: speak
+    actor: Dewey
+    text: "Then let me make it spatial. If every formal system is incomplete, then inquiry cannot terminate in formalism. It must terminate in practice. In experience. In the consequence of belief. You've just scored an own goal, Gödel. Your incompleteness is our mandate."
+    tone: forceful
+    direction: "Dewey steps forward from deep midfield."
+
+  - minute: 15
+    type: announce
+    actor: Arendt
+    text: "Dewey pressing now. The Naturalists are reading that incompleteness result as an invitation, not a wall."
+
+  - minute: 16
+    type: speak
+    actor: Gödel
+    text: "That is one reading."
+    tone: quiet
+
+  - minute: 16
+    type: pause
+    pause_ms: 2000
+
+  - minute: 16
+    type: comment
+    actor: Rorty
+    text: "Devastating brevity. Gödel gives you four words and somehow holds possession."
+
+  # ── Midfield battle ────────────────────────────────────────────
+
+  - minute: 18
+    type: pass
+    from: Gödel
+    to: Russell
+
+  - minute: 18
+    type: speak
+    actor: Russell
+    text: "Let me put it directly. Dewey says inquiry terminates in practice. Fine. But practice without form is motion without direction. You kick the ball — to where? Without a logical framework, 'forward' is meaningless. You need rules before you need experience."
+    tone: declarative
+
+  - minute: 20
+    type: speak
+    actor: Quine
+    text: "Rules. Yes. But which rules? I've spent my career showing that the boundary between analytic and synthetic is not a wall — it's a gradient. Your logical framework, Russell, floats on the same empirical sea as our observations. You have no dry land."
+    tone: measured
+    direction: "Quine steps up from the defensive line."
+
+  - minute: 21
+    type: announce
+    actor: Arendt
+    text: "Quine out of position — the Naturalists' defender pushing into midfield. Bold."
+
+  - minute: 22
+    type: intercept
+    actor: Quine
+    direction: "Quine takes the ball from Russell."
+
+  - minute: 22
+    type: announce
+    actor: Arendt
+    text: "Quine takes it! The Naturalists regain possession."
+
+  - minute: 22
+    type: comment
+    actor: Rorty
+    text: "The web-of-belief tackle. Classic Quine. He doesn't beat you at one point — he undermines the whole structure."
+
+  - minute: 23
+    type: pass
+    from: Quine
+    to: Darwin
+
+  - minute: 24
+    type: speak
+    actor: Darwin
+    text: "The framework floats. The organism swims. That is the whole of natural philosophy in two sentences. You cannot anchor knowledge in pure logic because logic itself evolved. It is a tool shaped by the same pressures that shaped the eye."
+    tone: warm
+
+  - minute: 25
+    type: speak
+    actor: Tarski
+    text: "The eye can be fooled. Logic cannot. A true sentence is true regardless of the observer. 'Snow is white' is true if and only if snow is white. That correspondence does not evolve. It holds."
+    tone: cold
+
+  - minute: 26
+    type: announce
+    actor: Arendt
+    text: "Tarski from deep. The Logicians' defender stepping into the argument."
+
+  - minute: 27
+    type: speak
+    actor: Hume
+    text: "Snow is white — today. On this mountain. Under this light. Your sentence is true by convention, Tarski, not by necessity. Change the language and the sentence changes. Change the world and the whiteness changes. Truth is not a picture. It is a practice."
+    tone: measured
+
+  - minute: 28
+    type: comment
+    actor: Rorty
+    text: "This is getting heated. Both defensive lines have pushed up. The pitch is compressed. Everyone between the two center thirds. Only the Tenders are holding their ground."
+
+  # ── Referee intervention ───────────────────────────────────────
+
+  - minute: 30
+    type: whistle
+    actor: Wittgenstein
+    reason: stoppage
+    direction: "Wittgenstein blows the whistle. Everyone stops."
+
+  - minute: 30
+    type: announce
+    actor: Arendt
+    text: "Wittgenstein stops play."
+
+  - minute: 30
+    type: pause
+    pause_ms: 3000
+
+  - minute: 30
+    type: speak
+    actor: Wittgenstein
+    text: "You are all speaking past each other. The game cannot continue until someone uses a word and means it."
+    tone: sharp
+    direction: "Wittgenstein stands below the pitch. Does not enter."
+
+  - minute: 31
+    type: comment
+    actor: Rorty
+    text: "That's the Ref. You don't argue with Wittgenstein. You just — stop."
+
+  - minute: 31
+    type: pause
+    pause_ms: 4000
+    direction: "Silence. Players resettle."
+
+  - minute: 32
+    type: whistle
+    actor: Wittgenstein
+    reason: restart
+
+  - minute: 32
+    type: announce
+    actor: Arendt
+    text: "Play resumes. Hume with the ball."
+
+  - minute: 32
+    type: hold
+    actor: Hume
+
+  # ── Building to halftime ───────────────────────────────────────
+
+  - minute: 33
+    type: speak
+    actor: Hume
+    text: "Wittgenstein is right. Let me mean what I say. I say: the ball is heavier when you hold it longer. Not physically. Epistemically. The longer you carry a claim without passing it, the more it costs you. That is what I observe."
+    tone: measured
+
+  - minute: 35
+    type: pass
+    from: Hume
+    to: Dewey
+
+  - minute: 35
+    type: speak
+    actor: Dewey
+    text: "Then let me carry it forward. Knowledge is not possession — it is transaction. The ball moves. The inquiry moves. If it stops, it dies. Every claim is a pass to the next question."
+    tone: forceful
+
+  - minute: 37
+    type: speak
+    actor: Frege
+    text: "A pass requires a receiver. A question requires a framework to be a question at all. You cannot transact without grammar. And grammar — logical grammar — is what we provide."
+    tone: cold
+
+  - minute: 38
+    type: pass
+    from: Dewey
+    to: Darwin
+
+  - minute: 38
+    type: move
+    actor: Darwin
+    position: { x: 30, y: 5 }
+    direction: "Darwin advances into the attacking third."
+
+  - minute: 39
+    type: announce
+    actor: Arendt
+    text: "Darwin is through! Open space in the attacking third."
+
+  - minute: 40
+    type: speak
+    actor: Darwin
+    text: "Grammar evolves too. The first language was a cry. The first logic was a flinch. You build your cathedrals of syntax on foundations that bled and ran and ate. Frege — your Begriffsschrift was written by a hand that trembled."
+    tone: warm
+    direction: "Darwin faces the Logicians' goal. Aristotle is still."
+
+  - minute: 41
+    type: speak
+    actor: Aristotle
+    text: "The hand trembles. The form holds."
+    tone: quiet
+    direction: "Aristotle speaks from the goal line. First words of the match."
+
+  - minute: 41
+    type: pause
+    pause_ms: 3000
+
+  - minute: 41
+    type: comment
+    actor: Rorty
+    text: "Aristotle. Six words. That's the Tender doing what a Tender does. You're standing at the goal, ready to score, and then the axiom speaks and you realize you haven't moved at all."
+
+  - minute: 43
+    type: dead_ball
+    direction: "Ball returns to center."
+
+  - minute: 44
+    type: announce
+    actor: Arendt
+    text: "Two minutes to the break. Still scoreless. But this is not a scoreless match."
+
+  - minute: 45
+    type: whistle
+    actor: Wittgenstein
+    reason: halftime
+
+  - minute: 45
+    type: halftime
+
+  - minute: 45
+    type: announce
+    actor: Arendt
+    text: "That's halftime. Naturalists and Logicians, nil-nil, but the pitch is charged."
+
+  - minute: 45
+    type: comment
+    actor: Rorty
+    text: "I've seen debates end with less said than what just happened in those forty-five minutes. The Naturalists are pressing with experience. The Logicians are holding with structure. Both Tenders are untouched. That's how you know it's working."
+
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # SECOND HALF
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  - minute: 46
+    type: whistle
+    actor: Wittgenstein
+    reason: kickoff
+    direction: "Second half begins."
+
+  - minute: 46
+    type: announce
+    actor: Arendt
+    text: "Second half underway. Logicians with the ball. Aristotle plays it out."
+
+  - minute: 46
+    type: pass
+    from: Aristotle
+    to: Frege
+
+  - minute: 47
+    type: speak
+    actor: Frege
+    text: "Darwin said my Begriffsschrift was written by a trembling hand. Let the hand tremble. The symbols do not. Two plus two does not equal four because I feel it. It equals four because the structure demands it. Feeling is noise."
+    tone: cold
+
+  - minute: 49
+    type: pass
+    from: Frege
+    to: Russell
+
+  - minute: 49
+    type: speak
+    actor: Russell
+    text: "I want to push further. The Naturalists keep invoking the body — the eye, the hand, the flinch. But the body is a premise, not a conclusion. We do not reason from bodies. We reason about bodies. The body is data. Logic is the operating system."
+    tone: declarative
+
+  - minute: 51
+    type: comment
+    actor: Rorty
+    text: "Russell is finding his range now. Clean passes, tight arguments. The Logicians look sharper after the break."
+
+  - minute: 52
+    type: speak
+    actor: Dewey
+    text: "An operating system that crashes without data is not an operating system. It is a fantasy. Russell, your logic is elegant and empty. Fill it with experience or watch it dissolve."
+    tone: forceful
+
+  - minute: 53
+    type: intercept
+    actor: Dewey
+    direction: "Dewey wins the ball in midfield."
+
+  - minute: 53
+    type: announce
+    actor: Arendt
+    text: "Dewey takes it back. Naturalists on the front foot again."
+
+  - minute: 55
+    type: pass
+    from: Dewey
+    to: Hume
+
+  - minute: 55
+    type: speak
+    actor: Hume
+    text: "Here is what I want to say, and I want to say it clearly. There is no impression without a world, and no idea without an impression. You can build all the logical architecture you like, but it rests — every beam, every joist — on something someone once saw, or heard, or touched. Deny that and you are playing a different sport."
+    tone: measured
+
+  - minute: 57
+    type: announce
+    actor: Arendt
+    text: "Hume at the center circle. Holding. The Logicians circling but not committing."
+
+  - minute: 58
+    type: speak
+    actor: Gödel
+    text: "I would like to agree with Hume and disagree at the same time. Impressions exist. But so do structures that no impression can reach. I have proven the existence of truths that no system can contain. Those truths are not seen or touched. They are — nevertheless."
+    tone: quiet
+
+  - minute: 59
+    type: pause
+    pause_ms: 3000
+    direction: "The pitch is still."
+
+  - minute: 59
+    type: comment
+    actor: Rorty
+    text: "Gödel is doing it again. Stopping the clock with a whisper. The Naturalists have the ball, but the Logicians have the silence."
+
+  # ── The goal ───────────────────────────────────────────────────
+
+  - minute: 62
+    type: pass
+    from: Hume
+    to: Darwin
+
+  - minute: 62
+    type: move
+    actor: Darwin
+    position: { x: 35, y: -5 }
+    direction: "Darwin cuts inside."
+
+  - minute: 63
+    type: speak
+    actor: Darwin
+    text: "Structures that no impression can reach. Yes. And organisms that no logic can predict. The mutation that survives is not the one that was entailed. It is the one that happened. Contingency is not noise, Gödel. It is the only music there is."
+    tone: warm
+
+  - minute: 64
+    type: pass
+    from: Darwin
+    to: Dewey
+
+  - minute: 64
+    type: move
+    actor: Dewey
+    position: { x: 40, y: 0 }
+    direction: "Dewey runs onto the pass at the edge of the box."
+
+  - minute: 64
+    type: announce
+    actor: Arendt
+    text: "Dewey at the edge of the area!"
+
+  - minute: 65
+    type: speak
+    actor: Dewey
+    text: "The consequence of an idea is the idea. If it works — if it solves, if it heals, if it builds — then it is true enough. Not true in your cathedral, Russell. True in the world. True where it matters."
+    tone: forceful
+
+  - minute: 65
+    type: goal
+    actor: Dewey
+    direction: "Dewey drives the ball past Aristotle."
+
+  - minute: 65
+    type: announce
+    actor: Arendt
+    text: "GOAL! Dewey! Pragmatism scores! The Naturalists lead!"
+
+  - minute: 65
+    type: comment
+    actor: Rorty
+    text: "And there it is. Dewey has been building to that for sixty-five minutes. True where it matters. That is a goal you score with a sentence."
+
+  - minute: 66
+    type: pause
+    pause_ms: 5000
+    direction: "Celebration is muted. Dewey stands still. Acknowledges nothing."
+
+  # ── Logicians respond ──────────────────────────────────────────
+
+  - minute: 68
+    type: whistle
+    actor: Wittgenstein
+    reason: restart
+
+  - minute: 68
+    type: pass
+    from: Aristotle
+    to: Tarski
+
+  - minute: 69
+    type: speak
+    actor: Tarski
+    text: "True where it matters. I accept the challenge. Where it matters is everywhere. A sentence is true in a model or it is not. Your pragmatism can build a house. My semantics can tell you whether the house exists. Which of us do you need more?"
+    tone: cold
+
+  - minute: 71
+    type: pass
+    from: Tarski
+    to: Frege
+
+  - minute: 72
+    type: speak
+    actor: Frege
+    text: "I have been patient. Let me now be clear. The Naturalists have scored because they redefined the goal. If truth is merely what works, then every illusion that persists is true. Every superstition that comforts is true. You have not scored. You have moved the posts."
+    tone: sharp
+
+  - minute: 73
+    type: announce
+    actor: Arendt
+    text: "Frege with real force now. The Logicians pushing bodies forward. Gödel and Russell both in the Naturalists' half."
+
+  - minute: 74
+    type: speak
+    actor: Quine
+    text: "Moving the posts. Fine. But your posts were never fixed either, Frege. You wanted a foundation for arithmetic and Russell showed you a paradox in your own system. The posts move. We are honest about it."
+    tone: measured
+
+  - minute: 75
+    type: comment
+    actor: Rorty
+    text: "Quine invoking Russell's paradox against the Logicians. Using their own ammunition. Clever defending."
+
+  - minute: 77
+    type: speak
+    actor: Russell
+    text: "Yes, I found the paradox. And I fixed it. With types. With structure. The Naturalists keep pointing at cracks in formal systems as if that validates informality. It does not. A cracked foundation is still more than no foundation at all."
+    tone: declarative
+
+  - minute: 78
+    type: move
+    actor: Russell
+    position: { x: -30, y: 5 }
+    direction: "Russell deep in the Naturalists' half."
+
+  - minute: 78
+    type: announce
+    actor: Arendt
+    text: "Russell pressing deep. Tarski overlapping. The Logicians are committed now."
+
+  - minute: 80
+    type: pass
+    from: Russell
+    to: Gödel
+
+  - minute: 80
+    type: speak
+    actor: Gödel
+    text: "Russell fixed the paradox. And created a hierarchy of types that no one can fully survey. Every fix produces a new structure. Every structure has a new limit. This is not failure. This is the shape of thought itself. The goal you scored, Dewey, is also a limit. You will find that it does not settle the question. It reopens it."
+    tone: quiet
+
+  - minute: 82
+    type: pause
+    pause_ms: 3000
+
+  - minute: 82
+    type: comment
+    actor: Rorty
+    text: "That's either the most profound thing anyone has said tonight or the most resigned. With Gödel, the difference may not exist."
+
+  # ── Final minutes ──────────────────────────────────────────────
+
+  - minute: 84
+    type: speak
+    actor: Hume
+    text: "The question reopens. Good. That is what inquiry does. The Logicians want closure. We want continuation. The ball keeps moving. The match keeps going. That — that right there — is the Naturalist position. Not a conclusion. A process."
+    tone: measured
+
+  - minute: 85
+    type: pass
+    from: Hume
+    to: Quine
+
+  - minute: 85
+    type: speak
+    actor: Quine
+    text: "Process. Network. Web. No statement stands alone. No player plays alone. The field is the unit. The web is the unit. Revise anywhere, and the whole adjusts. That is how we hold the lead."
+    tone: measured
+
+  - minute: 87
+    type: speak
+    actor: Frege
+    text: "You hold the lead because you redefined leading. When this match is over, the score will stand. One to nil. That one — that single mark — is a fact. Not a process. Not a web. A fact."
+    tone: sharp
+
+  - minute: 88
+    type: speak
+    actor: Thales
+    text: "All is water."
+    tone: quiet
+    direction: "Thales speaks from the goal line. His second contribution."
+
+  - minute: 88
+    type: pause
+    pause_ms: 5000
+    direction: "Complete silence. No one moves."
+
+  - minute: 88
+    type: comment
+    actor: Rorty
+    text: "Thales. The Tender speaks. Three words. And every argument on the pitch just — dissolved. That is what a first principle does. It doesn't win the argument. It reminds you where the argument comes from."
+
+  # ── Full time ──────────────────────────────────────────────────
+
+  - minute: 90
+    type: announce
+    actor: Arendt
+    text: "We're into the final minute. Wittgenstein checking his watch — assuming he acknowledges the concept of time."
+
+  - minute: 90
+    type: comment
+    actor: Rorty
+    text: "He does. Reluctantly."
+
+  - minute: 90
+    type: whistle
+    actor: Wittgenstein
+    reason: fulltime
+    direction: "Three long blasts."
+
+  - minute: 90
+    type: fulltime
+
+  - minute: 90
+    type: announce
+    actor: Arendt
+    text: "That is full time. The Naturalists win it, one-nil. Dewey's pragmatic strike the difference. But this match — this match was not about the score."
+
+  - minute: 90
+    type: comment
+    actor: Rorty
+    text: "No. It was about permission to act under constraint. And tonight, both sides earned it."
